@@ -16,7 +16,7 @@ static this()
     auto settings 		        = new HttpServerSettings;
     settings.port 		        = 80;
     settings.hostName 		    = "1100110.in";
-    settings.bindAddresses 	    = ["127.0.0.1"];
+    settings.bindAddresses 	    = ["0.0.0.0"];
     settings.errorPageHandler 	= toDelegate(&error);
 
     auto router 		    = new UrlRouter;
