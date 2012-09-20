@@ -1,0 +1,24 @@
+extends layout
+
+block title
+    -string title = "1100110";
+
+block body
+    #leftBox 
+        h2 Usage
+            p  This design is good.
+            p
+
+        h2 Author
+            p 1100110
+            p
+
+        h2 Contact
+            p Don't
+            a(href="http://vibed.org/")
+                img#logo(src="#{req.rootDir}images/photo.jpg", alt='')
+
+
+    #footer
+        p 1100110
+        p

@@ -1,0 +1,23 @@
+!!! 5
+html(lang="en")
+
+    head
+        block title
+        title = 1100110
+        link(rel="stylesheet", href="#{req.rootDir}styles/style.css", type="text/css")
+
+    body
+        block body
+        
+        div#header 
+            div#container
+                div#content
+                    div#leftBox 
+                    
+                    div#navigation
+                    
+                    div#rightBox
+                    
+
+        #footer
+

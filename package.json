@@ -1,0 +1,8 @@
+﻿{
+    "name": "blog",
+	"description": "Utilize Vibe.d.",
+    "authors": [ "1100110" ],
+    "version": "0.0.1",
+    "dependencies": {  
+    }
+}

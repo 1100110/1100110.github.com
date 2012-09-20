@@ -1,0 +1,20 @@
+extends layout
+
+block title
+    -string title = "Error "~to!string(error.code); 
+
+block navigation
+    -if(auto pref = "referrer" in req.headers)
+        ul
+            li
+                a(href="#{*pref}" Go Back
+
+block body
+    h1 HTTP error
+
+        p Sorry, we got an error: #{error.code}
+        p while processing this request. We will look into this as soon as possible.
+        p Here is the Error message:
+        P
+        p'#{error.message}'
+        
