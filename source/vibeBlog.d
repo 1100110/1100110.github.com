@@ -1,5 +1,4 @@
 import vibe.d;
-import tor.tor; 
 
 void error(HttpServerRequest req, HttpServerResponse res, HttpServerErrorInfo error)
 {
@@ -21,8 +20,8 @@ static this()
 
     auto router 		    = new UrlRouter;
     router.get("/",         staticTemplate!"index.dt");  
+    router.get("/hla",      staticTemplate!"hla.dt");
     router.get("*",         serveStaticFiles("./public"));
-    router.get("/tor/:url", torHandler());   
     
     listenHttp(settings, router);
 }
